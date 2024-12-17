@@ -1,0 +1,91 @@
+body {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+/* 确保 app 容器占满整个视口 */
+#app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin: 0 auto;
+    /* 居中 */
+    max-width: 600px;
+    /* 设置最大宽度 */
+}
+
+header {
+    line-height: 1.5;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+nav {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+nav a.router-link-exact-active {
+    color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+    background-color: transparent;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+    border: 0;
+}
+
+.el-card {
+    .el-card__body {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    margin-bottom: 20px;
+}
+
+.el-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.el-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    +.el-button {
+        margin-left: 0;
+    }
+}
+
+ol {
+    padding-inline-start: 1em;
+    text-align: left;
+}
+
+.subtitle-text {
+    font-size: 12px;
+    color: gray;
+}

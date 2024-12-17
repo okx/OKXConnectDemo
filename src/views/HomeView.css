@@ -1,0 +1,19 @@
+.chain-links {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    
+    a {
+        padding: 8px 12px;
+    }
+
+    a:not(:last-child):after {
+        content: "";
+        border-right: 1px solid white;
+        position: relative;
+        left: 20px;
+    }
+}
