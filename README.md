@@ -6,7 +6,7 @@ This is a demo on how to use OKX Connect to connect an OKX Wallet. You can refer
 ## Project Setup
 
 ```sh
-yarn
+yarn install
 ```
 
 ### Compile and Hot-Reload for Development
